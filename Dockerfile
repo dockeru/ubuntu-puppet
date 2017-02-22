@@ -28,3 +28,5 @@ VOLUME		["/etc/puppetlabs/code/"]
 EXPOSE		443 8140 8142 61613
 
 ENTRYPOINT	["/opt/puppetlabs/bin/puppetserver", "foreground"]
+
+ENV		PATH $PATH:/opt/puppetlabs/bin
